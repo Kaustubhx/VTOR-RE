@@ -1,0 +1,81 @@
+<div id="carousel-wrapper" class="">
+    <div id="carousel-container" class="bg-[#ecf5fe]">
+        <div id="banner-wrapper" class="!h-full !w-full overflow-auto">
+            <!-- <div id="slider_Backgrounds" class="w-full h-full absolute">
+                <img [ngClass]="{'hidden' : data > 0}" src="https://html.crumina.net/html-utouch/img/clouds1.png"
+                    class="absolute h-full w-full object-contain" alt="Slide1 Clouds">
+                <img [ngClass]="{'!hidden' : data != 2}" src="https://html.crumina.net/html-utouch/img/clouds3.png"
+                    alt="slide3"
+                    class="hidden md:block scale-[2.5] md:scale-100 h-[30vh] md:h-[68vh] lg:h-screen w-[90%] md:w-full object-contain absolute">
+            </div> -->
+            <owl-carousel-o [options]="bannerOptions">
+                <ng-container *ngFor="let info of bannerInfo">
+
+                    <ng-template carouselSlide id="{{info.bannerId_1}}">
+                        <div id="slide-1-wrapper" class="slide-wrapper xl:justify-center lg:h-full lg:w-full">
+                            <div id="container">
+                                <div id="slide-1-content"
+                                    class="text-center pt-5 px-1 mb-16 lg:max-w-2xl xl:max-w-3xl lg:mx-auto">
+                                    <p class="text-2xl md:text-3xl xl:text-4xl font-bold text-primary_text my-3">
+                                        {{info.slideTitle_1}}</p>
+                                    <p class="text-primary_text md:text-xl xl:text-lg mt-2 mb-8">{{info.slideDes_1}}</p>
+                                    <div id="slide-1-buttons"
+                                        class="flex flex-col md:flex-row md:justify-center md:space-x-3">
+                                        <button class="uppercase text-xs md:text-sm font-extrabold">
+                                            <a href=""
+                                                class="text-white bg-yellow-400 px-7 xl:px-9 py-3 rounded-full">Learn
+                                                More</a>
+                                        </button>
+                                        <button class="mt-9 md:mt-0 uppercase text-xs md:text-sm font-extrabold">
+                                            <a href=""
+                                                class="text-sky-600 border-2 border-sky-500 py-3 px-8 xl:px-10 rounded-full">Get
+                                                Started Now</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="slide-1-image" class="">
+                                    <img src="{{info.imageSrc_1}}" alt="{{info.imageAlt_1}}">
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide id="{{info.bannerId_2}}">
+                        <div id="slide-2-wrapper" class="px-5 slide-wrapper relative">
+                            <div id="container" class="md:!mx-0 lg:!mx-5">
+                                <div id="slide-2-content" class="text-start xl:max-w-lg">
+                                    <p class="text-primary_text text-2xl md:text-3xl font-bold mb-6">
+                                        {{info.slideTitle_2}}</p>
+                                    <p class="text-primary_text md:text-xl mb-8">{{info.slideDes_2}}</p>
+                                    <div id="slide-2-buttons">
+                                        <GplayButton></GplayButton>
+                                    </div>
+                                </div>
+                                <div id="slide-2-image" class="absolute lg:top-[21.5rem] xl:pt-24 xl:top-0 lg:right-0 -z-10">
+                                    <img src="{{info.imageSrc_2}}" alt="{{info.imageAlt_2}}" class="!hidden md:!block">
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide id="{{info.bannerId_3}}">
+                        <div id="slide-3-wrapper" class="slide-wrapper lg:h-screen h-full w-full xl:justify-center">
+                            <div id="container" class="lg:flex lg:flex-row-reverse lg:items-center">
+                                <div id="slide-3-content" class="mb-16 xl:max-w-xl">
+                                    <p
+                                        class="text-primary_text text-2xl md:text-3xl lg:text-4xl lg:max-w-lg font-bold mb-6">
+                                        {{info.slideTitle_3}}</p>
+                                    <p class="text-primary_text md:text-xl !leading-7 mb-8">{{info.slideDes_3}}</p>
+                                    <a routerLink="/about" href=""
+                                        class="uppercase text-xs md:text-sm text-white font-bold bg-[#9FC31A] py-3 px-6 rounded-full">Get
+                                        Started Now</a>
+                                </div>
+                                <div id="slide-3-image" class="w-[77vw] md:w-[40vw] lg:w-[40vw] xl:w-[30vw] mx-auto">
+                                    <img src="{{info.imageSrc_3}}" alt="{{info.imageAlt_3}}">
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

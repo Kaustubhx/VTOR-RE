@@ -1,0 +1,51 @@
+<div id="caseItems" class="pt-9 2xl:mx-36 xl:mx-28 lg:mx-20">
+    <div id="caseItems_Intro" class="px-5 md:px-9 lg:px-0 text-[#273f5b] w-[22rem] md:w-auto space-y-6">
+        <div id="caseItems_contents" class="max-w-xl inline-block mt-16">
+            <p class="text-lg font-medium text-pale_slate mb-6">Our Works</p>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold pb-9">Let Everyone Know Why We are the Best</h2>
+            <p class="text-sm md:text-lg lg:text-sm !leading-7 tracking-wide text-pale_slate">Lorem ipsum dolor sit amet
+                consectetur adipisicing
+                elit. Placeat rerum
+                excepturi
+                enim provident autem
+                accusamus a officia quia?</p>
+        </div>
+        <button
+            class="border-2 border-sky-500 text-sky-600 font-bold py-3 px-9 md:px-11 !mb-8 lg:ml-60 rounded-full text-xs md:text-sm">ALL
+            WORKS</button>
+    </div>
+
+    <div id="caseItems_Slider">
+        <div id="container" class="px-5 !mx-0 md:!px-9 lg:!px-0">
+            <owl-carousel-o [options]="caseSliderOptions">
+
+                <ng-container *ngFor="let productInfo of caseItemsData">
+                    <ng-template carouselSlide>
+                        <div id="productContainer" class="pt-8 relative cursor-pointer">
+                            <div id="productImage" class="inline-block mx-10">
+                                <img [src]="productInfo.caseItemImg" class="!inline-block">
+                            </div>
+                            <div id="itemBg" [ngStyle]="{background: productInfo.bgColor}"
+                                class="absolute bottom-0 left-0 w-[98%] lg:w-[95%] h-3/4 -z-10 rounded-xl">
+                            </div>
+                            <div id="productContent"
+                                class="px-9 xl:px-0 py-7 text-white lg:inline-block xl:top-[85px] xl:max-w-[14.125rem] 2xl:max-w-[19.125rem] lg:relative line-clamp-3">
+                                <div id="productDesc" class="text-lg lg:text-xl tracking-wide font-bold mb-10">
+                                    <p>{{productInfo.caseItemNote}}</p>
+                                </div>
+                                <div [routerLink]="['/products', productInfo.id]" id="caseRedirect"
+                                    class="cursor-pointer inline-flex">
+                                    <p class="text-sm inline-flex items-center font-bold">VIEW CASE <mat-icon
+                                            class="ml-2 text-sm">
+                                            arrow_forward_ios</mat-icon>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ng-container>
+
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

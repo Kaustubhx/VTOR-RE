@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'material-icons/iconfont/material-icons.css';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@layer components {
+
+    .slide3_Content {
+        @apply mx-6 flex flex-col items-start space-y-6 justify-center
+    }
+
+    .slide3_ContentMD {
+        @apply absolute right-0 w-[25rem] h-96
+    }
+
+    .slide3_ContentLG {
+        @apply absolute right-0 w-[36rem] h-96
+    }
+
+    /* Header Component Styling*/
+    
+    .nav-mobile {
+        @apply lg:hidden absolute top-0 right-2 h-12 w-12 block pt-2
+    }
+
+    .active-link {
+        @apply lg:!text-[#0083ff]
+    }
+
+
+    /* Header Component Styling END */
+
+    /* Banner Component */
+    .slide-wrapper {
+        @apply h-screen flex items-center
+    }
+
+    /* Screenshot section */
+    .appScreenshot {
+        @apply w-[61vw] md:w-[35vw] lg:w-[23vw] 2xl:w-[21vw] lg:mr-10 lg:ml-auto xl:mr-[5.8rem] 2xl:mr-[9.5rem] mx-auto md:ml-7
+    }
+
+    /* Footer Component */
+    .footer_links {
+        @apply hover:ml-3 transition-all ease-in-out hover:text-[#0083ff] inline-flex duration-300 h-5
+    }
+
+
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+

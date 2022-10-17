@@ -1,0 +1,144 @@
+<Header></Header>
+<div id="caseDetails-wrapper" [ngStyle]="{background: product.bannerColor}"
+    class="pt-9 lg:pt-32 relative lg:flex lg:justify-evenly">
+    <div id="container" class="px-5 md:px-9 lg:inline-block">
+        <div id="caseDetails-content" class="text-white mb-8 lg:max-w-xl">
+            <p class="opacity-70 uppercase font-bold mb-6">Case Details</p>
+            <p id="appHeading" class="mb-8 text-2xl md:text-3xl lg:text-5xl font-bold tracking-wide">
+                {{product.appHeading}}</p>
+            <p id="appNote" class="mt-5 font-medium tracking-wide !leading-6 md:text-xl lg:text-lg">
+                {{product.appNote}}</p>
+        </div>
+        <GplayButton></GplayButton>
+    </div>
+    <div id="caseDetail-DemoImage" class="lg:inline-block mt-8 pb-8">
+        <img src="{{product.appDemoImage}}" alt="" class="mx-auto block object-contain w-[93vw] md:w-auto">
+    </div>
+</div>
+
+<div id="caseDetail-Desc" class="py-9">
+    <div id="container" class="px-5 md:px-9 lg:flex lg:justify-around">
+        <div id="caseDetail-Desc-1" class="mb-7 lg:max-w-lg">
+            <p class="text-primary_text text-xl md:text-3xl lg:text-2xl font-extrabold md:font-bold mb-7">
+                {{product.appDescription_Title1}}</p>
+            <p class="text-secondary_text text-lg lg:text-base !leading-7">{{product.appDescription_1}}
+            </p>
+        </div>
+        <div id="casaeDetail-Desc-2" class="mt-5 lg:mt-0 lg:max-w-lg">
+            <p class="text-primary_text text-xl md:text-3xl lg:text-2xl font-extrabold md:font-bold mb-7">
+                {{product.appDescription_Title2}}</p>
+            <p class="text-secondary_text text-lg lg:text-base !leading-7">{{product.appDescription_2}}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="caseDetail-working" class="py-9">
+    <div id="container" class="lg:flex lg:justify-evenly">
+        <div id="caseDetail-Screenshot" class="px-5 lg:inline-block">
+            <img src="{{product.appWorkingImage}}" alt=""
+                class="w-[19rem] h-full mx-auto inline-block md:block object-contain rounded-lg">
+        </div>
+        <div id="caseDetail-instructionWrapper" class="mt-5 px-5 md:px-9 lg:inline-block lg:max-w-2xl">
+            <div id="caseDetail-instructions" class="mb-7">
+                <p class="text-primary_text text-xl md:text-3xl lg:text-4xl font-bold mb-8">How it Works</p>
+                <p class="text-secondary_text md:text-xl lg:text-base md:!leading-8 font-medium">
+                    {{product.appWorkingDescription}}
+                </p>
+            </div>
+            <ul
+                class="mt-6 mb-9 ml-8 text-primary_text text-sm md:text-base font-bold md:flex md:flex-col md:space-y-2">
+                <li class="inline-flex">
+                    <i class="material-icons mr-2 text-sm font-extrabold text-[#01a23c]">done</i>
+                    <p class="inline-block hover:text-[#01a23c] hover:cursor-pointer transition ease-linear">
+                        {{product.appPlusPoint_1}}</p>
+                </li>
+                <li class="inline-flex">
+                    <i class="material-icons mr-2 text-sm font-extrabold text-[#01a23c]">done</i>
+                    <p class="inline-block hover:text-[#01a23c] hover:cursor-pointer transition ease-linear">
+                        {{product.appPlusPoint_2}}</p>
+                </li>
+                <li class="inline-flex">
+                    <i class="material-icons mr-2 text-sm font-extrabold text-[#01a23c]">done</i>
+                    <p class="inline-block hover:text-[#01a23c] hover:cursor-pointer transition ease-linear">
+                        {{product.appPlusPoint_3}}</p>
+                </li>
+                <li class="inline-flex">
+                    <i class="material-icons mr-2 text-sm font-extrabold text-[#01a23c]">done</i>
+                    <p class="inline-block hover:text-[#01a23c] hover:cursor-pointer transition ease-linear">
+                        {{product.appPlusPoint_4}}</p>
+                </li>
+            </ul>
+            <a href=""
+                class="uppercase text-white font-extrabold bg-[#0083ff] text-xs md:text-sm py-3 px-7 rounded-full">Get
+                Started Now</a>
+        </div>
+    </div>
+</div>
+
+<div id="caseDetail-technology" class="py-24">
+    <div id="container" class="">
+        <SupportCards></SupportCards>
+    </div>
+</div>
+
+<div id="caseDetail-ScreenshotGallery" class="py-9">
+    <div id="container" class="px-5">
+        <div id="headings" class="text-center mb-8">
+            <p class="text-primary_text text-lg uppercase font-medium mb-6">Screenshots</p>
+            <p class="text-primary_text text-2xl font-bold">Beautiful Design and Comfortable User Interface</p>
+        </div>
+        <div id="gallery" class="pb-24">
+            <div id="container" class="px-5 !mx-0">
+                <div id="galleryCarousel-wrapper"
+                    class="relative h-[37.125rem] lg:h-[95vh] xl:h-[126vh] w-full md:w-2/4 lg:w-[32%] md:mx-auto lg:block">
+                    <div id="screenshotHolder" class="absolute">
+                        <img src="https://html.crumina.net/html-utouch/img/smartphone2.png" alt=""
+                            class="lg:block mx-auto">
+                    </div>
+                    <div id="screenshotCarousel"
+                        class="absolute h-full w-[79vw] md:w-[40vw] pt-16 xl:pt-24 md:left-[.5rem] lg:-left-[100px]">
+                        <owl-carousel-o [options]="galleryOptions">
+                            <ng-template carouselSlide>
+                                <div class="appScreenshot">
+                                    <img src="{{product.appImage_1}}">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="appScreenshot">
+                                    <img src="{{product.appImage_2}}">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="appScreenshot">
+                                    <img src="{{product.appImage_3}}">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="appScreenshot">
+                                    <img src="{{product.appImage_4}}">
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="caseDetails-Download" class="py-20">
+    <div id="container" class="px-5">
+        <div id="downloadSection" class="text-center lg:max-w-3xl lg:mx-auto">
+            <div id="downloadDesc" class="text-primary_text text-center mb-7">
+                <p class="text-2xl lg:text-4xl font-bold mb-7">Download the <span
+                        class="text-[#0083ff]">{{product.appName}}</span> Now!</p>
+                <p class="font-medium text-secondary_text">{{product.appShortDesc}}
+                </p>
+            </div>
+            <GplayButton></GplayButton>
+        </div>
+    </div>
+</div>
+
+<Footer></Footer>

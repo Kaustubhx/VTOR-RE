@@ -1,0 +1,5 @@
+<div id="supportCards" class="mt-10 xl:mt-28 px-8 lg:px-24 grid md:grid-cols-2 lg:grid-cols-3 gap-y-6">
+    <ng-container *ngFor="let singleCard of cards" class="flex flex-col lg:space-x-9">
+        <SingleSupportCard [support]="singleCard"></SingleSupportCard>
+    </ng-container>
+</div>

@@ -1,0 +1,17 @@
+export interface carouselData {
+    bannerId_1: string,
+    slideTitle_1: string,
+    slideDes_1: string,
+    imageSrc_1: string,
+    imageAlt_1: string,
+    bannerId_2: string,
+    slideTitle_2: string,
+    slideDes_2: string,
+    imageSrc_2: string,
+    imageAlt_2: string,
+    bannerId_3: string,
+    slideTitle_3: string,
+    slideDes_3: string,
+    imageSrc_3: string,
+    imageAlt_3: string,
+}

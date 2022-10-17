@@ -1,0 +1,21 @@
+<div id="clientsReview-wrapper" class="pt-28 pb-16 relative">
+    <div id="review-background" class="absolute w-full top-52 h-[24vh] md:h-[30vh] lg:h-auto object-contain">
+        <img src="https://html.crumina.net/html-utouch/img/clouds4.png" alt="" class="block mx-auto w-9/12">
+    </div>
+    <p class="text-primary_text/70 text-xl font-bold text-center pb-7">Clients Review</p>
+    <div id="clientReview" class="flex flex-col lg:w-[35vw] mx-auto">
+        <owl-carousel-o [options]="reviewOptions">
+
+            <ng-container *ngFor="let clientInfo of clientReview">
+                <ng-template carouselSlide>
+                    <div id="clientSlide" class="flex flex-col items-center text-center px-4 pt-2 lg:max-w-md mx-auto">
+                        <img [src]="clientInfo.clientImg" [alt]="clientInfo.imageAlt" class="h-14 !w-14">
+                        <p class="text-primary_text font-bold text-lg mt-5">{{clientInfo.clientSaying}}</p>
+                        <p class="text-sky-500 font-medium pt-4 md:pt-12 md:text-xl">{{clientInfo.clientName}}</p>
+                    </div>
+                </ng-template>
+            </ng-container>
+
+        </owl-carousel-o>
+    </div>
+</div>
