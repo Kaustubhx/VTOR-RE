@@ -21,19 +21,23 @@
             <ul class="flex flex-col text-secondary_text text-sm xl:text-base lg:font-medium space-y-2">
                 <li class="footer_links group">
                     <a href="" class="">Home</a>
-                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios</mat-icon>
+                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios
+                    </mat-icon>
                 </li>
                 <li class="footer_links group">
                     <a href="" class="">Company</a>
-                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios</mat-icon>
+                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios
+                    </mat-icon>
                 </li>
                 <li class="footer_links group">
                     <a href="" class="">Products</a>
-                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios</mat-icon>
+                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios
+                    </mat-icon>
                 </li>
                 <li class="footer_links group">
                     <a href="" class="">Contact</a>
-                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios</mat-icon>
+                    <mat-icon class="ml-2 mt-[2px] text-sm !hidden group-hover:!inline-block">arrow_forward_ios
+                    </mat-icon>
                 </li>
             </ul>
         </div>
@@ -57,14 +61,14 @@
     </div>
     <div id="sub-footer" class="relative text-center mt-24 py-6 bg-white">
         <button id="back-to-top"
-            class="bg-[#0083ff] shadow-[#0083ff] h-16 w-16 z-10 block left-[40%] md:left-[47%] -top-7 absolute rounded-full leading-[77px]"
+            class="bg-[#0083ff] shadow-[#0083ff] h-16 w-16 z-10 block left-[40%] md:left-[47%] -top-7 absolute rounded-full leading-[77px] animate-bounce"
             (click)="scrollToTop()">
 
             <mat-icon class="text-white">arrow_upward</mat-icon>
         </button>
         <div id="container" class="text-sm text-[#6987ab] px-4 py-5">
             <div id="copyright" class="space-y-2">
-                <p>Copyright © 2022 <span class="text-sky-500 font-medium">VTOR</span></p>
+                <p>Copyright © <span id="date">{{date}}</span> <span class="text-sky-500 font-medium">VTOR</span></p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est labore qui error.</p>
             </div>
         </div>

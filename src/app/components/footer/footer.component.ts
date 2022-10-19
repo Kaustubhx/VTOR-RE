@@ -10,7 +10,8 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
-  // var scroll = document.documentElement.scr
+  // date: number
+  date = new Date().getFullYear();
 
   scrollToTop() {
     (function smoothscroll() {
@@ -24,6 +25,7 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
 }
