@@ -2,9 +2,11 @@
 
 <div id="contactPage-wrapper">
     <div id="container" class="mx-5 lg:flex lg:justify-around">
-        <div #map style="width:100%;height:400px">
-
-        </div>
+        <google-map height="400px" width="750px" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
+            (mapMousemove)="move($event)">
+            <map-marker *ngFor="let markerPosition of markerPositions" [position]="markerPosition"
+                [options]="markerOptions"></map-marker>
+        </google-map>
         <div id="location" class="lg:max-w-sm">
             <div id="locationNotes" class="text-center md:text-start my-5">
                 <p class="text-2xl md:text-3xl font-bold text-primary_text my-8">Get in Touch with Us</p>
