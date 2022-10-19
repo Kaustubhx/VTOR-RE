@@ -19,6 +19,7 @@ import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
 import { LabstorycarouselComponent } from './components/labstorycarousel/labstorycarousel.component';
 import { ContactpageComponent } from './pages/contactpage/contactpage.component';
 import { ProductpageComponent } from './pages/productpage/productpage.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,8 @@ import { ProductpageComponent } from './pages/productpage/productpage.component'
     MatIconModule,
     BrowserAnimationsModule,
     CarouselModule,
+    GoogleMapsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
