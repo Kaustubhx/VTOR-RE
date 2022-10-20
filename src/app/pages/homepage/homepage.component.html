@@ -1,8 +1,8 @@
-<Header></Header>
-<Banner [bannerInfo]="bannerData"></Banner>
-<SupportCards></SupportCards>
+<Header id="header"></Header>
+<Banner id="banner" [bannerInfo]="bannerData"></Banner>
+<SupportCards id="cards"></SupportCards>
 
-<ProductSlider></ProductSlider>
+<ProductSlider id="slider"></ProductSlider>
 
 <div id="vtorWorks" class="relative px-5 md:px-7 mt-12 pt-7 pb-10 bg-[#ecf5fe]">
     <div class="lg:flex lg:justify-around lg:items-center">
@@ -12,7 +12,8 @@
                 <span class="text-sky-600">VTOR</span>
                 works
             </h1>
-            <p class="text-primary_text text-sm md:text-lg lg:text-base tracking-wider !leading-7">Claritas est etiam
+            <p class="text-primary_text text-sm md:text-lg lg:text-base tracking-wider !leading-7">Claritas est
+                etiam
                 processus
                 dynamicus, qui sequitur
                 mutationem consuetudium lectorum. Mirum est
@@ -24,7 +25,7 @@
                 Us Now <i class="material-icons">keyboard_arrow_right</i></button>
         </div>
         <div id="vtroWorkingImg" class="flex justify-center">
-            <img src="https://html.crumina.net/html-utouch/img/video-thumb.png" alt="labsWorking" class="pt-4">
+            <img src="assets/images/video-thumb.png" alt="labsWorking" class="pt-4">
         </div>
     </div>
 </div>
@@ -51,12 +52,13 @@
         <div id="vtorAbout"
             class="md:col-start-1 md:col-end-3 text-center lg:text-left max-w-xs md:max-w-none lg:max-w-xs space-y-2">
             <h1 class="text-white font-semibold ">VTOR is an awesome start-up</h1>
-            <p class="text-white/50 text-sm font-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            <p class="text-white/50 text-sm font-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed
                 diam nonummy euismod.</p>
         </div>
     </div>
 </div>
 
-<ClientReviews [clientReview]="clientData"></ClientReviews>
+<ClientReviews id="vtorReview" [clientReview]="clientData"></ClientReviews>
 
-<Footer></Footer>
+<Footer id="footer"></Footer>

@@ -14,34 +14,36 @@ export class ProductsliderComponent implements OnInit {
     {
       id: 1,
       bgColor: '#007bef',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
+      caseItemImg: 'assets/images/case1.jpg',
       caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
     },
     {
       id: 2,
       bgColor: '#bb26f0',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
+      caseItemImg: 'assets/images/case2.jpg',
       caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
     },
     {
       id: 3,
       bgColor: '#007bef',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
+      caseItemImg: 'assets/images/case1.jpg',
       caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
     },
     {
       id: 4,
       bgColor: '#bb26f0',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
+      caseItemImg: 'assets/images/case2.jpg',
       caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
     },
   ]
 
-  constructor() { }
 
+  product: any;
+  constructor(private route: ActivatedRoute, private data: DataService) { }
 
   ngOnInit(): void {
-
+    let id = this.route.snapshot.params['id']
+    this.product = this.data.getById(id);
   }
 
 

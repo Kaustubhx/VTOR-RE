@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
+import { ScrollService } from 'src/app/service/scroll.service';
 
 @Component({
   selector: 'Header',
@@ -13,16 +15,6 @@ export class HeaderComponent implements OnInit {
     this.isMenuOpen = !this.isMenuOpen
   }
 
-  constructor() { }
-
-  scrollToProducts() {
-    (function smoothscroll() {
-      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      console.log(currentScroll);
-      // window.scrollTo(0, 150)
-      window.scrollTo(0, -550)
-    })
-  }
   ngOnInit(): void {
   }
 

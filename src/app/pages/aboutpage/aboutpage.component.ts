@@ -9,19 +9,19 @@ export class AboutpageComponent implements OnInit {
 
   vtorTeamData = [
     {
-      memberAvatar: 'https://html.crumina.net/html-utouch/img/teammember3.png',
+      memberAvatar: 'assets/images/teammember3.png',
       memberRole: 'Founder',
       memberName: 'Abhijit Chaudhry',
       memberIntro: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
     },
     {
-      memberAvatar: 'https://html.crumina.net/html-utouch/img/teammember3.png',
+      memberAvatar: 'assets/images/teammember3.png',
       memberRole: 'Founder',
       memberName: 'Moxesh Mehta',
       memberIntro: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
     },
     {
-      memberAvatar: 'https://html.crumina.net/html-utouch/img/teammember2.png',
+      memberAvatar: 'assets/images/teammember2.png',
       memberRole: 'Founder',
       memberName: 'Britney Simpson',
       memberIntro: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',

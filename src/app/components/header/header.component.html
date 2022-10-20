@@ -1,4 +1,4 @@
-<section class="h-16 lg:h-20 shadow-md">
+<section id="header-wrapper" class="h-16 lg:h-20 shadow-md">
     <div class="max-w-[1000px] my-0 mx-auto">
         <div routerLink='' class="absolute pl-5 float-left uppercase pt-2 cursor-pointer">
             <img src="https://www.vtorlabs.com/assets/logo.png" alt="Lab Logo" class="h-12 w-12 lg:w-16 lg:h-16">
@@ -16,20 +16,20 @@
             </div>
             <ul class="m-0 p-0 text-sm" [class.show-links]="isMenuOpen">
                 <li>
-                    <a routerLink='/' routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" href=""
-                        class="text-white lg:text-[#6987ab]">Home</a>
+                    <a href="#home" routerLink='/' routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" href=""
+                        class="scroll-links text-white lg:text-[#6987ab]">Home</a>
                 </li>
                 <li>
-                    <a routerLink='/company' routerLinkActive="active-link" href=""
-                        class="text-white lg:text-[#6987ab]">Company</a>
+                    <a href="#company" routerLink='/company' routerLinkActive="active-link" href=""
+                        class="scroll-links text-white lg:text-[#6987ab]">Company</a>
                 </li>
                 <li>
-                    <a class="text-white lg:text-[#6987ab]">Products</a>
+                    <a href="#product" class="scroll-links text-white lg:text-[#6987ab]">Products</a>
                 </li>
 
                 <li>
-                    <a routerLink='/contactus' routerLinkActive="active-link" href=""
-                        class="text-white lg:text-[#6987ab]">Contact</a>
+                    <a href="#contact" routerLink='/contactus' routerLinkActive="active-link" href=""
+                        class="scroll-links text-white lg:text-[#6987ab]">Contact</a>
                 </li>
             </ul>
         </nav>
