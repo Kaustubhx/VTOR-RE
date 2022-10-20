@@ -34,13 +34,8 @@ export class ProductsliderComponent implements OnInit {
     {
       id:4,
       bgColor: '#bb26f0',
-<<<<<<< HEAD
       caseItemImg: 'assets/images/case2.jpg',
       caseItemNote: 'VTOR DENTAL - Your Dental Buddy',
-=======
-      caseItemImg: 'assets/images/case2.jpg',
-      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
->>>>>>> 59d1477b4a5b3d6c8033d82f92e5c91f23ff8fed
     },
   ]
 
