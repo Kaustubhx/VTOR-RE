@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { vtorApp } from 'src/app/interfaces/appdetails';
 import { DataService } from 'src/app/service/data.service';
 
 @Component({
@@ -37,11 +36,13 @@ export class ProductpageComponent implements OnInit {
   }
 
 
-  product: { id: string; appName: string; } | any;
+  product: any;
   constructor(private route: ActivatedRoute, private data: DataService) { }
 
   ngOnInit(): void {
     let id = this.route.snapshot.params['id']
-    this.product = this.data.getById(id)
+    this.product = this.data.getById(id);
+
+    window.scrollTo(0, 0);
   }
 }

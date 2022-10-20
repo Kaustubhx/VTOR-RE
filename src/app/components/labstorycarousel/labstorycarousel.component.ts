@@ -11,28 +11,28 @@ export class LabstorycarouselComponent implements OnInit {
   labsStoryData = [
     {
       bgColor: '#0083ff',
-      yearImg: 'https://html.crumina.net/html-utouch/svg/flag.svg',
+      yearImg: 'assets/images/flag.svg',
       year: '2019',
       yearTitle: 'The Begining',
       yearInfo: 'Its not always easy to take first step after lots of analysis and efforts we took it'
     },
     {
       bgColor: '#EF6517',
-      yearImg: 'https://html.crumina.net/html-utouch/svg/settings.svg',
+      yearImg: 'assets/images/gear.svg',
       year: '2020',
       yearTitle: 'Completed 10 Deployments',
       yearInfo: 'Its nearly 5 months from the start and by the grace of almighty we completed 10 Deployments',
     },
     {
       bgColor: '#ff3133',
-      yearImg: 'https://html.crumina.net/html-utouch/svg/team.svg',
+      yearImg: 'assets/images/team.svg',
       year: '2021',
       yearTitle: 'The Partnership',
       yearInfo: 'This year we did 20+ projects but what was important was our partnership with those brands as we earned their trust',
     },
     {
       bgColor: '#01a23c',
-      yearImg: 'https://html.crumina.net/html-utouch/svg/rocket-launch.svg',
+      yearImg: 'assets/images/rocket-launch.svg',
       year: '2022',
       yearTitle: 'Inhouse Products',
       yearInfo: 'The baby has grown and started creating own products now we are moving towards creating our own global space',
@@ -49,7 +49,7 @@ export class LabstorycarouselComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: false,
+    dots: true,
     navSpeed: 700,
     navText: ['<span class="material-icons">arrow_back_ios</span>', '<span class="material-icons">arrow_forward_ios</span>'],
     responsive: {
@@ -63,7 +63,7 @@ export class LabstorycarouselComponent implements OnInit {
         items: 4
       },
     },
-    nav: true
+    nav: false
   }
 
 }

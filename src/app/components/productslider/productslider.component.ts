@@ -15,35 +15,42 @@ export class ProductsliderComponent implements OnInit {
       id:1,
       bgColor: '#007bef',
       productLink: '/myybacasedetails',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
+      caseItemImg: 'assets/images/case1.jpg',
       caseItemNote: 'Myyba Shops - Your Bizz Buddy',
     },
     {
       id:2,
       bgColor: '#bb26f0',
       productLink: '/fitappcasedetails',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
+      caseItemImg: 'assets/images/case2.jpg',
       caseItemNote: 'VTOR FIT - Your Fitness Expert',
     },
     {
       id:3,
       bgColor: '#007bef',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
+      caseItemImg: 'assets/images/case1.jpg',
       caseItemNote: 'VTOR COMMERCE - Multi Vendor Ecommerce',
     },
     {
       id:4,
       bgColor: '#bb26f0',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
+<<<<<<< HEAD
+      caseItemImg: 'assets/images/case2.jpg',
       caseItemNote: 'VTOR DENTAL - Your Dental Buddy',
+=======
+      caseItemImg: 'assets/images/case2.jpg',
+      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
+>>>>>>> 59d1477b4a5b3d6c8033d82f92e5c91f23ff8fed
     },
   ]
 
-  constructor() { }
 
+  product: any;
+  constructor(private route: ActivatedRoute, private data: DataService) { }
 
   ngOnInit(): void {
-
+    let id = this.route.snapshot.params['id']
+    this.product = this.data.getById(id);
   }
 
 
