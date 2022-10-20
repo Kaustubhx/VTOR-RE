@@ -12,28 +12,30 @@ export class ProductsliderComponent implements OnInit {
 
   caseItemsData = [
     {
-      id: 1,
+      id:1,
+      bgColor: '#007bef',
+      productLink: '/myybacasedetails',
+      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
+      caseItemNote: 'Myyba Shops - Your Bizz Buddy',
+    },
+    {
+      id:2,
+      bgColor: '#bb26f0',
+      productLink: '/fitappcasedetails',
+      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
+      caseItemNote: 'VTOR FIT - Your Fitness Expert',
+    },
+    {
+      id:3,
       bgColor: '#007bef',
       caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
-      caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
+      caseItemNote: 'VTOR COMMERCE - Multi Vendor Ecommerce',
     },
     {
-      id: 2,
+      id:4,
       bgColor: '#bb26f0',
       caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
-      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
-    },
-    {
-      id: 3,
-      bgColor: '#007bef',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
-      caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
-    },
-    {
-      id: 4,
-      bgColor: '#bb26f0',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
-      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
+      caseItemNote: 'VTOR DENTAL - Your Dental Buddy',
     },
   ]
 
