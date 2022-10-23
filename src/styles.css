@@ -21,7 +21,7 @@
     }
 
     /* Header Component Styling*/
-    
+
     .nav-mobile {
         @apply lg:hidden absolute top-0 right-2 h-12 w-12 block pt-2
     }
@@ -47,8 +47,6 @@
     .footer_links {
         @apply hover:ml-3 transition-all ease-in-out hover:text-[#0083ff] inline-flex duration-300 h-5
     }
-
-
 }
 
 html,
@@ -100,3 +98,62 @@ body {
     stroke-dashoffset: -138px;
 }
 
+
+.clientStyling .owl-theme .owl-nav [class*=owl-] {
+    color: #0083ff !important;
+    background-color: transparent;
+}
+
+/* .clientStyling > .owl-theme .owl-nav [class*=owl-]{
+    color: #0083ff !important;
+}  */
+
+.clientStyling .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 175px;
+}
+
+.bannerArrowStyling .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 27rem;
+}
+
+.bannerArrowStyling .owl-theme .owl-nav [class*=owl-] {
+    color: white !important;
+    background-color: #0083ff;
+    opacity: .4;
+    margin: 0;
+    width: 38px;
+    transition: opacity .3s ,width .3s;
+}
+
+/* @media only screen and (min-width: 1024px) {
+    width: 51px;
+} */
+
+.bannerArrowStyling .owl-theme .owl-nav [class*=owl-]:hover {
+    opacity: 1;
+    width: 50px;
+}
+
+.bannerArrowStyling .owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+
+.bannerArrowStyling .owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+}

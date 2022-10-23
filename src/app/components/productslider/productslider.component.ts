@@ -69,7 +69,7 @@ export class ProductsliderComponent implements OnInit {
         items: 2
       }
     },
-    nav: false
+    nav: false,
   }
 
 }

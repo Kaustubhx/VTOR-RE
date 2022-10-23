@@ -19,11 +19,12 @@ export class ClientreviewsComponent implements OnInit {
   reviewOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
+    autoplay: true,
     // autoWidth: false,
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 300,
     navText: ['<span class="material-icons">arrow_back_ios</span>', '<span class="material-icons">arrow_forward_ios</span>'],
     responsive: {
       0: {
@@ -39,7 +40,7 @@ export class ClientreviewsComponent implements OnInit {
         items: 1
       }
     },
-    nav: false
+    nav: true,
   }
 
 }

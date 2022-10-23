@@ -1,13 +1,13 @@
 <div id="carousel-wrapper" class="">
     <div id="carousel-container" class="bg-[#ecf5fe]">
-        <div id="banner-wrapper" class="!h-full !w-full overflow-auto">
-            <!-- <div id="slider_Backgrounds" class="w-full h-full absolute">
+        <div id="banner-wrapper" class="!h-full !w-full overflow-auto bannerArrowStyling">
+            <div id="slider_Backgrounds" class="w-full h-full absolute">
                 <img [ngClass]="{'hidden' : data > 0}" src="https://html.crumina.net/html-utouch/img/clouds1.png"
                     class="absolute h-full w-full object-contain" alt="Slide1 Clouds">
                 <img [ngClass]="{'!hidden' : data != 2}" src="https://html.crumina.net/html-utouch/img/clouds3.png"
                     alt="slide3"
                     class="hidden md:block scale-[2.5] md:scale-100 h-[30vh] md:h-[68vh] lg:h-screen w-[90%] md:w-full object-contain absolute">
-            </div> -->
+            </div>
             <owl-carousel-o [options]="bannerOptions">
                 <ng-container *ngFor="let info of bannerInfo">
 
@@ -42,7 +42,7 @@
                     <ng-template carouselSlide id="{{info.bannerId_2}}">
                         <div id="slide-2-wrapper" class="px-5 slide-wrapper relative">
                             <div id="container" class="md:!mx-0 lg:!mx-5">
-                                <div id="slide-2-content" class="text-start xl:max-w-lg">
+                                <div id="slide-2-content" class="text-start xl:max-w-[30rem] !ml-44">
                                     <p class="text-primary_text text-2xl md:text-3xl font-bold mb-6">
                                         {{info.slideTitle_2}}</p>
                                     <p class="text-primary_text md:text-xl mb-8">{{info.slideDes_2}}</p>
@@ -59,7 +59,7 @@
                     <ng-template carouselSlide id="{{info.bannerId_3}}">
                         <div id="slide-3-wrapper" class="slide-wrapper lg:h-screen h-full w-full xl:justify-center">
                             <div id="container" class="lg:flex lg:flex-row-reverse lg:items-center">
-                                <div id="slide-3-content" class="mb-16 xl:max-w-xl">
+                                <div id="slide-3-content" class="mb-16 xl:max-w-[32rem] ml-36">
                                     <p
                                         class="text-primary_text text-2xl md:text-3xl lg:text-4xl lg:max-w-lg font-bold mb-6">
                                         {{info.slideTitle_3}}</p>
