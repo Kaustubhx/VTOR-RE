@@ -51,7 +51,7 @@ export class HomepageComponent implements OnInit {
       clientSaying: "“ VTOR Labs resolve's your business problem real fast with utmost quality...”",
     },
     {
-      clientImg: 'assets/images/client3.png',
+      clientImg: 'assets/images/client3.jpg',
       imageAlt: 'Hanvant Gadhvi profile',
       clientName: 'Hanvant Gadhvi',
       clientSaying: '“ Just like magic they did an unbelievable job really happy with the quality service by VTOR Labs ”',

@@ -38,7 +38,7 @@ export class BannerComponent implements OnInit {
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 300,
+    navSpeed: 500,
     navText: ['<span class="material-icons p-2">arrow_back_ios</span>', '<span class="material-icons py-2">arrow_forward_ios</span>'],
     responsive: {
       0: {
