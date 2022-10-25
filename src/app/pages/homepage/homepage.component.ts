@@ -21,17 +21,17 @@ export class HomepageComponent implements OnInit {
     {
       bannerId_1: "1",
       slideTitle_1: "We Build Scalable Business Solutions",
-      slideDes_1: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      slideDes_1: "You will not get time to redesign your business at its peak or when its required to scale thus building it scalable is most important thing and we are experts in that.",
       imageSrc_1: 'assets/images/slides1.png',
       imageAlt_1: 'slide1',
       bannerId_2: '2',
-      slideTitle_2: "Myybaa store is a product to help small vendors",
-      slideDes_2: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      slideTitle_2: "Myyba store is a product to help small vendors",
+      slideDes_2: "This baby of ours is meant to create history not only growing of himself but for the sake of society helping local business get the success they always deserved",
       imageSrc_2: 'assets/images/slides2.png',
       imageAlt_2: 'slide2',
       bannerId_3: '3',
       slideTitle_3: "We help your vision become into a reality",
-      slideDes_3: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      slideDes_3: "Our expert cell of research and development helps turning your ideas to reality in no time",
       imageSrc_3: 'assets/images/slides3.png',
       imageAlt_3: 'slide3'
     }
@@ -54,7 +54,7 @@ export class HomepageComponent implements OnInit {
       clientImg: 'assets/images/client3.png',
       imageAlt: 'Hanvant Gadhvi profile',
       clientName: 'Hanvant Gadhvi',
-      clientSaying: '“Just like our name they did an unbelievable job really happy with the quality service by VTOR Labs”',
+      clientSaying: '“ Just like magic they did an unbelievable job really happy with the quality service by VTOR Labs ”',
     },
   ]
 

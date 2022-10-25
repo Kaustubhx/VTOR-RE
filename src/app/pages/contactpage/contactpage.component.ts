@@ -14,8 +14,8 @@ export class ContactpageComponent implements OnInit {
 
   display: any;
   center: google.maps.LatLngLiteral = {
-    lat: 19.2109178,
-    lng: 72.8564248
+    lat: 19.2108,
+    lng: 72.8747
   };
   zoom = 20;
   moveMap(event: google.maps.MapMouseEvent) {

@@ -12,33 +12,33 @@ export class SupportcardsComponent implements OnInit {
     {
       cardImg: "https://html.crumina.net/html-utouch/svg-icons/smartphone.svg",
       cardTitle: "Online Shopping",
-      cardDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+      cardDes: "Your Business Buddy for complete app for online shopping"
     },
     {
       cardImg: "https://html.crumina.net/html-utouch/svg-icons/music%20(1).svg",
-      cardTitle: "Multimedia Archives",
-      cardDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+      cardTitle: "Video Audio Streaming Apps",
+      cardDes: "Whitelisted Video Audio Streaming Apps"
     },
     {
       cardImg: "https://html.crumina.net/html-utouch/svg-icons/settings%20(4).svg",
-      cardTitle: "Quick Settings",
-      cardDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+      cardTitle: "Customizations",
+      cardDes: "Customization of UI and Functionality of the application"
     },
     {
       cardImg: "https://html.crumina.net/html-utouch/svg-icons/alarm.svg",
-      cardTitle: "Push Notification",
-      cardDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+      cardTitle: "Notifications",
+      cardDes: "Notification for client update and leads accumalations"
     },
     {
       cardImg: "https://html.crumina.net/html-utouch/svg-icons/cloud-computing%20(1).svg",
       cardTitle: "Cloud Integration",
-      cardDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+      cardDes: "Expert support for AWS and Azure based Deployements"
     },
     {
       cardImg: "https://html.crumina.net/html-utouch/svg-icons/chat1.svg",
-      cardTitle: "Private Chat",
-      cardDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
-    },
+      cardTitle: "Tech Support",
+      cardDes: "24*7 Tech Support and Consultancy"
+    },    
   ]
 
   constructor() { }

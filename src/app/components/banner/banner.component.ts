@@ -39,7 +39,7 @@ export class BannerComponent implements OnInit {
     pullDrag: true,
     dots: false,
     navSpeed: 300,
-    navText: ['<span class="material-icons p-2">keyboard_arrow_left</span>', '<span class="material-icons py-2">keyboard_arrow_right</span>'],
+    navText: ['<span class="material-icons p-2">arrow_back_ios</span>', '<span class="material-icons py-2">arrow_forward_ios</span>'],
     responsive: {
       0: {
         items: 1

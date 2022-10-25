@@ -9,3 +9,7 @@
 #productImage:hover {
     transform: perspective(50em) translateZ(0) translate(0%, 0%) rotateY(0deg) rotateX(0deg);
 }
+
+.imgShadow {
+    box-shadow: 30px 0 25px 0 rgb(0 0 0 / 20%);
+}

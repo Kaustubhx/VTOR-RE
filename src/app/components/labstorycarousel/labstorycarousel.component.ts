@@ -13,29 +13,29 @@ export class LabstorycarouselComponent implements OnInit {
       bgColor: '#0083ff',
       yearImg: 'assets/images/flag.svg',
       year: '2019',
-      yearTitle: 'Claritas est processus',
-      yearInfo: 'Wisi enim ad minim veniam, quis nostrud exerci tation qui nunc nobis videntur parum clari.'
+      yearTitle: 'The Begining',
+      yearInfo: 'Its not always easy to take first step after lots of analysis and efforts we took it'
     },
     {
       bgColor: '#EF6517',
       yearImg: 'assets/images/gear.svg',
       year: '2020',
-      yearTitle: 'Typi non claritatem',
-      yearInfo: 'Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit lectores legere me lius quod ii legunt.',
+      yearTitle: 'Completed 10 Deployments',
+      yearInfo: 'Its nearly 5 months from the start and by the grace of almighty we completed 10 Deployments',
     },
     {
       bgColor: '#ff3133',
       yearImg: 'assets/images/team.svg',
       year: '2021',
-      yearTitle: 'Eodem modo typi',
-      yearInfo: 'Investigationes demonstraverunt lectores legere me lius quod.',
+      yearTitle: 'The Partnership',
+      yearInfo: 'This year we did 20+ projects but what was important was our partnership with those brands as we earned their trust',
     },
     {
       bgColor: '#01a23c',
       yearImg: 'assets/images/rocket-launch.svg',
       year: '2022',
-      yearTitle: 'Duis autem vel eum',
-      yearInfo: 'Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.',
+      yearTitle: 'Inhouse Products',
+      yearInfo: 'The baby has grown and started creating own products now we are moving towards creating our own global space',
     },
   ]
 

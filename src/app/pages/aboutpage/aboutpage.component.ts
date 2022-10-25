@@ -12,19 +12,13 @@ export class AboutpageComponent implements OnInit {
       memberAvatar: 'assets/images/teammember3.png',
       memberRole: 'Founder',
       memberName: 'Abhijit Chaudhry',
-      memberIntro: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
+      memberIntro: 'He comes from a information security background with strong hold on research and design of solution',
     },
     {
       memberAvatar: 'assets/images/teammember3.png',
       memberRole: 'Founder',
       memberName: 'Moxesh Mehta',
-      memberIntro: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
-    },
-    {
-      memberAvatar: 'assets/images/teammember2.png',
-      memberRole: 'Founder',
-      memberName: 'Britney Simpson',
-      memberIntro: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
+      memberIntro: 'He comes from a product background and is an expert in product creation , trend and its propogation in market',
     }
   ]
 

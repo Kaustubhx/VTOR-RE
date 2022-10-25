@@ -6,6 +6,6 @@
 @layer components {
 
     #container {
-        @apply px-5 md:mx-5
+        @apply px-5 md:mx-5 lg:px-0 lg:mx-0
     }
 }
