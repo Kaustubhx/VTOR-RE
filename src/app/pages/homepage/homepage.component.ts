@@ -27,7 +27,7 @@ export class HomepageComponent implements OnInit {
       bannerId_2: '2',
       slideTitle_2: "Myyba store is a product to help small vendors",
       slideDes_2: "This baby of ours is meant to create history not only growing of himself but for the sake of society helping local business get the success they always deserved",
-      imageSrc_2: 'assets/images/slides2.png',
+      imageSrc_2: 'assets/images/Frame 7.png',
       imageAlt_2: 'slide2',
       bannerId_3: '3',
       slideTitle_3: "We help your vision become into a reality",

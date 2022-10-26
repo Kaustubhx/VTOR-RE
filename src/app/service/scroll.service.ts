@@ -7,6 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 
 export class ScrollService {
-
-    
+    scroll(el: HTMLElement) {
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
 }

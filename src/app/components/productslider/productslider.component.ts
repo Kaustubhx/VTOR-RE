@@ -14,27 +14,25 @@ export class ProductsliderComponent implements OnInit {
     {
       id:1,
       bgColor: '#007bef',
-      productLink: '/myybacasedetails',
-      caseItemImg: 'assets/images/case1.jpg',
+      caseItemImg: 'assets/images/case1.png',
       caseItemNote: 'Myyba Shops - Your Bizz Buddy',
     },
     {
       id:2,
       bgColor: '#bb26f0',
-      productLink: '/fitappcasedetails',
-      caseItemImg: 'assets/images/case2.jpg',
+      caseItemImg: 'assets/images/case2.png',
       caseItemNote: 'VTOR FIT - Your Fitness Expert',
     },
     {
       id:3,
       bgColor: '#007bef',
-      caseItemImg: 'assets/images/case1.jpg',
+      caseItemImg: 'assets/images/case4.png',
       caseItemNote: 'VTOR COMMERCE - Multi Vendor Ecommerce',
     },
     {
       id:4,
       bgColor: '#bb26f0',
-      caseItemImg: 'assets/images/case2.jpg',
+      caseItemImg: 'assets/images/case3.png',
       caseItemNote: 'VTOR DENTAL - Your Dental Buddy',
     },
   ]

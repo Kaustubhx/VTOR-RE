@@ -12,7 +12,7 @@ export class DataService {
       bannerColor: '#007bef',
       appHeading: "Myyba Shops - Your Bizz Buddy",
       appNote: "Myyba Shops enlightning path of vendors to brighter futures for their brand",
-      appDemoImage: "https://html.crumina.net/html-utouch/img/screen3.png",
+      appDemoImage: "/assets/images/screen1.png",
       appDescription_Title1: "Myyba Shops - Global Mall",
       appDescription_1: "Myyba Shops connects all local shops into a global mall and provides a wide opportunity of sales",
       appDescription_Title2: "Myyba Shops - Future of Sales",
@@ -30,14 +30,14 @@ export class DataService {
       appImage_4: 'https://play-lh.googleusercontent.com/XQVcn1a6quDH00u-SbWI_VEl3Qd3QNi2-uVAf0R4tfeVjQSOXmDzrblt_xv0lRTj-Lc2=w2560-h1440-rw',
       appName: "Myyba Shops",
       appShortDesc: "Your Bizz Buddy",
-    
+
     },
     {
       id: '2',
       bannerColor: '#bb26f0',
       appHeading: "VTOR FIT - Your Fitness Expert",
       appNote: "Its a complete solution for all fitness organizations and allows you to digitize and automate all your operations",
-      appDemoImage: "https://html.crumina.net/html-utouch/img/screen1.png",
+      appDemoImage: "/assets/images/screen2.png",
       appDescription_Title1: "Lead and Customer Management",
       appDescription_1: "Its high quality management portal allows you to keep record , intimate , and update your customer and leads with ease",
       appDescription_Title2: "Workout and Plan creations",
@@ -60,7 +60,7 @@ export class DataService {
       bannerColor: '#007bef',
       appHeading: "VTOR COMMERCE - Multivendor Ecommerce Platform",
       appNote: "Its a complete solution for single domain commercial platform for multiple vendors with solution to business automation, order management and payment management",
-      appDemoImage: "https://html.crumina.net/html-utouch/img/screen1.png",
+      appDemoImage: "/assets/images/screen3.png",
       appDescription_Title1: "Lead and Customer Management",
       appDescription_1: "Its high quality management portal allows you to keep record , intimate , and update your customer and leads with ease",
       appDescription_Title2: "Order & Payment Management",
@@ -83,7 +83,7 @@ export class DataService {
       bannerColor: '#bb26f0',
       appHeading: "VTOR Dental - Your Dental Buddy",
       appNote: "Its a complete digital solution for for Dental Vendors , Dentist's  and Customers with Dental Problems ",
-      appDemoImage: "https://html.crumina.net/html-utouch/img/screen1.png",
+      appDemoImage: "/assets/images/screen4.png",
       appDescription_Title1: "Lead and Customer Management",
       appDescription_1: "Its high quality management portal allows you to keep record , intimate , and update your customer and leads with ease",
       appDescription_Title2: "Queries and Treatment Management",
@@ -102,7 +102,7 @@ export class DataService {
       appShortDesc: "VTOR Dental - A complete digital solution for for Dental Vendors , Dentist's  and Customers with Dental Problems "
     },
 
-    
+
   ]
 
 

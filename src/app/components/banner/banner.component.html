@@ -1,6 +1,6 @@
 <div id="carousel-wrapper" class="">
     <div id="carousel-container" class="bg-[#ecf5fe]">
-        <div id="banner-wrapper" class="!h-full !w-full overflow-auto bannerArrowStyling">
+        <div id="slider-wrapper" class="!h-full !w-full overflow-auto bannerArrowStyling owlHeight">
             <div id="slider_Backgrounds" class="w-full h-full absolute">
                 <img [ngClass]="{'hidden' : data > 0}" src="https://html.crumina.net/html-utouch/img/clouds1.png"
                     class="absolute h-full w-full object-contain" alt="Slide1 Clouds">
@@ -13,13 +13,15 @@
                 <ng-container *ngFor="let info of bannerInfo">
 
                     <ng-template carouselSlide id="{{info.bannerId_1}}">
-                        <div id="slide-1-wrapper" class="slide-wrapper xl:justify-center lg:h-full lg:w-full">
+                        <div id="slide-1-wrapper"
+                            class="slide-wrapper max-w-[1200px] lg:mx-auto xl:justify-center lg:h-full lg:w-full">
                             <div id="container">
                                 <div id="slide-1-content"
                                     class="text-center pt-5 px-1 mb-16 lg:max-w-2xl xl:max-w-3xl lg:mx-auto">
                                     <p class="text-2xl md:text-3xl xl:text-4xl font-bold text-primary_text my-3">
                                         {{info.slideTitle_1}}</p>
-                                    <p class="text-primary_text md:text-xl xl:text-lg mt-2 mb-8">{{info.slideDes_1}}</p>
+                                    <p class="text-primary_text md:text-xl xl:text-lg mt-2 mb-8">{{info.slideDes_1}}
+                                    </p>
                                     <div id="slide-1-buttons"
                                         class="flex flex-col md:flex-row md:justify-center md:space-x-3">
                                         <button class="uppercase text-xs md:text-sm font-extrabold">
@@ -28,7 +30,7 @@
                                                 More</a>
                                         </button>
                                         <button class="mt-9 md:mt-0 uppercase text-xs md:text-sm font-extrabold">
-                                            <a href=""
+                                            <a href="https://wa.me/919284469487?text=I%20want%20to%20know%20about%20the%20services%20provided%20by%20VtorLabs%20LLP.%20"
                                                 class="text-sky-600 border-2 border-sky-500 py-3 px-8 xl:px-10 rounded-full">Get
                                                 Started Now</a>
                                         </button>
@@ -42,7 +44,7 @@
                     </ng-template>
                     <ng-template carouselSlide id="{{info.bannerId_2}}">
                         <div id="slide-2-wrapper" class="px-5 slide-wrapper relative">
-                            <div id="container" class="md:!mx-0 lg:!mx-5">
+                            <div id="container" class="max-w-[1200px] lg:mx-auto">
                                 <div id="slide-2-content" class="text-start xl:max-w-[30rem] xl:!ml-16 2xl:!ml-36">
                                     <p class="text-primary_text text-2xl md:text-3xl font-bold mb-6">
                                         {{info.slideTitle_2}}</p>
@@ -60,7 +62,7 @@
                     </ng-template>
                     <ng-template carouselSlide id="{{info.bannerId_3}}">
                         <div id="slide-3-wrapper"
-                            class="slide-wrapper lg:h-screen h-full w-full xl:justify-center lg:max-w-[1200px] lg:mx-auto">
+                            class="slide-wrapper lg:h-screen h-full w-full xl:justify-center max-w-[1200px] lg:mx-auto">
                             <div id="container" class="lg:flex lg:flex-row-reverse lg:items-center">
                                 <div id="slide-3-content" class="mb-16 xl:max-w-[32rem] lg:ml-36">
                                     <p

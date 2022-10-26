@@ -34,11 +34,14 @@ export class BannerComponent implements OnInit {
 
   bannerOptions: OwlOptions = {
     loop: true,
+    autoHeight: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 500,
+    navSpeed: 150,
+    animateIn: 'animate__animated animate__fadeInRight animate__faster',
+    animateOut: 'animate__animated animate__fadeOutLeft animate__faster',
     navText: ['<span class="material-icons p-2">arrow_back_ios</span>', '<span class="material-icons py-2">arrow_forward_ios</span>'],
     responsive: {
       0: {
