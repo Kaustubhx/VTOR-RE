@@ -17,7 +17,7 @@ export class ProductpageComponent implements OnInit {
     pullDrag: false,
     dots: false,
     navSpeed: 300,
-    navText: ['', ''],
+    navText: ['<span class="material-icons">arrow_back_ios</span>', '<span class="material-icons">arrow_forward_ios</span>'],
     responsive: {
       0: {
         items: 1
@@ -32,7 +32,7 @@ export class ProductpageComponent implements OnInit {
         items: 1
       }
     },
-    nav: false
+    nav: true,
   }
 
 

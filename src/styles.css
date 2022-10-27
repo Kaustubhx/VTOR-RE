@@ -112,7 +112,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom: 175px;
+    bottom: 10rem;
 }
 
 .bannerArrowStyling .owl-nav {
@@ -163,4 +163,45 @@ body {
 .owlHeight .owl-carousel { 
     overflow: hidden;
     height: 730px;
+}
+
+/* Product Page Carousel */
+
+.scrennshotArrows .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 20rem;
+}
+
+.scrennshotArrows .owl-theme .owl-nav [class*=owl-] {
+    color: white !important;
+    background-color: #0083ff;
+    opacity: .4;
+    margin: 0;
+    transition: opacity .3s
+}
+
+.scrennshotArrows .owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.scrennshotArrows .owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-prev {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.scrennshotArrows .owl-theme .owl-nav [class*=owl-]:hover {
+    opacity: 1;
 }

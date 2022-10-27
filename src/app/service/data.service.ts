@@ -97,7 +97,7 @@ export class DataService {
       appImage_1: 'https://html.crumina.net/html-utouch/img/screen2.png',
       appImage_2: 'https://html.crumina.net/html-utouch/img/screen2.png',
       appImage_3: 'https://html.crumina.net/html-utouch/img/screen2.png',
-      appImage_4: 'https://html.crumina.net/html-utouch/img/screen2.png',
+      appImage_4: '/assets/images/Dental_Buddy-SS.png',
       appName: "VTOR Dental",
       appShortDesc: "VTOR Dental - A complete digital solution for for Dental Vendors , Dentist's  and Customers with Dental Problems "
     },
