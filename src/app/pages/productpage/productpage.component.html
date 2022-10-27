@@ -88,39 +88,32 @@
             <p class="text-primary_text text-lg uppercase font-medium mb-6">Screenshots</p>
             <p class="text-primary_text text-2xl font-bold">Beautiful Design and Comfortable User Interface</p>
         </div>
-        <div id="gallery" class="pb-24 lg:pb-0">
-            <div id="container" class="px-5 !mx-0">
-                <div id="galleryCarousel-wrapper"
-                    class="relative h-[37.125rem] lg:h-[95vh] xl:h-[126vh] w-full md:w-2/4 lg:w-[28%] md:mx-auto lg:block">
-                    <div id="screenshotHolder" class="absolute">
-                        <img src="https://html.crumina.net/html-utouch/img/smartphone2.png" alt=""
-                            class="lg:block mx-auto">
-                    </div>
-                    <div id="screenshotCarousel"
-                        class="absolute h-full w-[79vw] md:w-[44vw] 2xl:w-[39vw] pt-16 xl:pt-24 md:left-5 lg:-left-[100px] scrennshotArrows">
-                        <owl-carousel-o [options]="galleryOptions">
-                            <ng-template carouselSlide>
-                                <div class="appScreenshot">
-                                    <img src="{{product.appImage_1}}">
-                                </div>
-                            </ng-template>
-                            <ng-template carouselSlide>
-                                <div class="appScreenshot">
-                                    <img src="{{product.appImage_2}}">
-                                </div>
-                            </ng-template>
-                            <ng-template carouselSlide>
-                                <div class="appScreenshot">
-                                    <img src="{{product.appImage_3}}">
-                                </div>
-                            </ng-template>
-                            <ng-template carouselSlide>
-                                <div class="appScreenshot">
-                                    <img src="{{product.appImage_4}}">
-                                </div>
-                            </ng-template>
-                        </owl-carousel-o>
-                    </div>
+
+        <div id="screenshotCarousel-Wrapper" class="">
+            <div id="container" class="px-5">
+                <div id="mainCarousel" class="mainCarousel-bg max-w-[1400px] pt-16 md:pt-20 pb-[4.2rem] md:pb-24 md:w-96 md:mx-auto">
+                    <owl-carousel-o [options]="galleryOptions">
+                        <ng-template carouselSlide>
+                            <div class="appScreenshot px-5 md:px-6">
+                                <img src="{{product.appImage_1}}">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="appScreenshots px-5 md:px-6">
+                                <img src="{{product.appImage_2}}">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="appScreenshots px-5 md:px-6">
+                                <img src="{{product.appImage_3}}">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="appScreenshots px-5 md:px-6">
+                                <img src="{{product.appImage_4}}">
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
                 </div>
             </div>
         </div>

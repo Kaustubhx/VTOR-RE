@@ -13,25 +13,25 @@ export class ProductsliderComponent implements OnInit {
   caseItemsData = [
     {
       id:1,
-      bgColor: '#007bef',
+      bgColor: '#292680',
       caseItemImg: 'assets/images/case1.png',
       caseItemNote: 'Myyba Shops - Your Bizz Buddy',
     },
     {
       id:2,
-      bgColor: '#bb26f0',
+      bgColor: '#e10018',
       caseItemImg: 'assets/images/case2.png',
       caseItemNote: 'VTOR FIT - Your Fitness Expert',
     },
     {
       id:3,
-      bgColor: '#007bef',
+      bgColor: '#cf3424',
       caseItemImg: 'assets/images/case4.png',
       caseItemNote: 'VTOR COMMERCE - Multi Vendor Ecommerce',
     },
     {
       id:4,
-      bgColor: '#bb26f0',
+      bgColor: '#140a51',
       caseItemImg: 'assets/images/case3.png',
       caseItemNote: 'VTOR DENTAL - Your Dental Buddy',
     },

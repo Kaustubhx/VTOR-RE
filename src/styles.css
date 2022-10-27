@@ -39,9 +39,16 @@
     }
 
     /* Screenshot section */
-    .appScreenshot {
-        @apply w-[68vw] md:w-[40vw] lg:w-[22vw] 2xl:w-[22vw] lg:mr-[6.7rem] lg:ml-auto xl:mr-[5.8rem] 2xl:mr-[8.5rem] mx-auto
+
+    .mainCarousel-bg {
+        background: url('/assets/images/smartphone.png') 50% 0 no-repeat;
+        background-size: contain;
+        
     }
+
+    /* .appScreenshot {
+        @apply w-[68vw] md:w-[40vw] lg:w-[22vw] 2xl:w-[22vw] lg:mr-[6.7rem] lg:ml-auto xl:mr-[5.8rem] 2xl:mr-[8.5rem] mx-auto
+    } */
 
     /* Footer Component */
     .footer_links {
