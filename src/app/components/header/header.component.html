@@ -16,7 +16,8 @@
             </div>
             <ul class="m-0 p-0 text-sm" [class.show-links]="isMenuOpen">
                 <li>
-                    <a href="#home" routerLink='/' routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" href=""
+                    <a href="#home" routerLink='/' routerLinkActive="active-link"
+                        [routerLinkActiveOptions]="{exact:true}" href=""
                         class="scroll-links text-white lg:text-[#6987ab]">Home</a>
                 </li>
                 <li>
@@ -24,7 +25,8 @@
                         class="scroll-links text-white lg:text-[#6987ab]">Company</a>
                 </li>
                 <li>
-                    <a href="#product" class="scroll-links text-white lg:text-[#6987ab]">Products</a>
+                    <a href="#product" routerLink="/products" routerLinkActive="active-link"
+                        class="scroll-links text-white lg:text-[#6987ab]">Products</a>
                 </li>
 
                 <li>

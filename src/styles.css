@@ -40,7 +40,7 @@
 
     /* Screenshot section */
     .appScreenshot {
-        @apply w-[61vw] md:w-[35vw] lg:w-[23vw] 2xl:w-[21vw] lg:mr-10 lg:ml-auto xl:mr-[5.8rem] 2xl:mr-[9.5rem] mx-auto md:ml-7
+        @apply w-[68vw] md:w-[40vw] lg:w-[22vw] 2xl:w-[22vw] lg:mr-[6.7rem] lg:ml-auto xl:mr-[5.8rem] 2xl:mr-[8.5rem] mx-auto
     }
 
     /* Footer Component */
@@ -103,10 +103,6 @@ body {
     color: #0083ff !important;
     background-color: transparent;
 }
-
-/* .clientStyling > .owl-theme .owl-nav [class*=owl-]{
-    color: #0083ff !important;
-}  */
 
 .clientStyling .owl-nav {
     display: flex;
@@ -171,25 +167,25 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom: 20rem;
+    bottom: 14rem;
 }
-
 .scrennshotArrows .owl-theme .owl-nav [class*=owl-] {
     color: white !important;
     background-color: #0083ff;
     opacity: .4;
     margin: 0;
-    transition: opacity .3s
-}
-
-.scrennshotArrows .owl-carousel .owl-dot,
-.owl-carousel .owl-nav .owl-next {
+    transition: opacity .3s;
+    border-radius: 50%;
     height: 38px;
     width: 38px;
+}
+
+/* 
+.scrennshotArrows .owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
 }
 
 .scrennshotArrows .owl-carousel .owl-dot,
@@ -201,7 +197,7 @@ body {
     justify-content: center;
     border-radius: 50%;
 }
-
+*/
 .scrennshotArrows .owl-theme .owl-nav [class*=owl-]:hover {
     opacity: 1;
-}
+} 
