@@ -38,12 +38,12 @@ export class ProductsliderComponent implements OnInit {
   ]
 
 
-  product: any;
+  productDet: any;
   constructor(private route: ActivatedRoute, private data: DataService) { }
 
   ngOnInit(): void {
     let id = this.route.snapshot.params['id']
-    this.product = this.data.getById(id);
+    this.productDet = this.data.getById(id);
   }
 
 
