@@ -32,7 +32,7 @@ export class ProductpageComponent implements OnInit {
         items: 1
       }
     },
-    nav: false,
+    nav: true,
   }
 
 

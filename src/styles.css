@@ -176,6 +176,12 @@ body {
     position: relative;
     bottom: 14rem;
 }
+
+@media only screen and (min-width: 768px) {
+    .scrennshotArrows .owl-nav {
+        bottom: 20rem;
+    }
+}
 .scrennshotArrows .owl-theme .owl-nav [class*=owl-] {
     color: white !important;
     background-color: #0083ff;
