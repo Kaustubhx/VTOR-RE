@@ -24,8 +24,8 @@
                     <a href="#company" routerLink='/company' routerLinkActive="active-link" href=""
                         class="scroll-links text-white lg:text-[#6987ab]">Company</a>
                 </li>
-                <li>
-                    <a href="#product" routerLink="/products" routerLinkActive="active-link"
+                <li *ngIf="page!=null && page=='home'">
+                    <a    (click)="scrollToAllElement('slider')"
                         class="scroll-links text-white lg:text-[#6987ab]">Products</a>
                 </li>
 

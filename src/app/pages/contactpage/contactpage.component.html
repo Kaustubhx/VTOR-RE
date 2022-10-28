@@ -1,12 +1,20 @@
-<Header></Header>
+<Header [page]="'contact'"></Header>
 
 <div id="contactPage-wrapper">
     <div id="container" class="mx-5 lg:flex lg:justify-around">
-        <google-map height="400px" width="750px" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
+        <!-- <google-map height="400px" width="750px" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
             (mapMousemove)="move($event)">
             <map-marker *ngFor="let markerPosition of markerPositions" [position]="markerPosition"
                 [options]="markerOptions"></map-marker>
-        </google-map>
+        </google-map> -->
+
+
+        <iframe 
+        [src]='mapsURL | safe' 
+        height="400px" width="750px"
+        frameborder="0" 
+        allowfullscreen webkitallowfullscreen mozallowfullscreen>
+        </iframe>
         <div id="location" class="lg:max-w-sm">
             <div id="locationNotes" class="text-center md:text-start my-5">
                 <p class="text-2xl md:text-3xl font-bold text-primary_text my-8">Get in Touch with Us</p>

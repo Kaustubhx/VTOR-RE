@@ -20,6 +20,7 @@ import { LabstorycarouselComponent } from './components/labstorycarousel/labstor
 import { ContactpageComponent } from './pages/contactpage/contactpage.component';
 import { ProductpageComponent } from './pages/productpage/productpage.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { SafePipe } from './pages/contactpage/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     LabstorycarouselComponent,
     ContactpageComponent,
     ProductpageComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

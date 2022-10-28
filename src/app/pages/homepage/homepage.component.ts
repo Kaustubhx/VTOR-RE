@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'homepage',
@@ -8,7 +8,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myElement: ElementRef) { }
 
   ngOnInit(): void {
   }
@@ -57,5 +57,13 @@ export class HomepageComponent implements OnInit {
       clientSaying: '“ Just like magic they did an unbelievable job really happy with the quality service by VTOR Labs ”',
     },
   ]
+  scrollToElement(name:string)
+  {
+     this.scrollTo(name);
+  }
 
+  scrollTo(name:string) {
+    this.myElement.nativeElement.ownerDocument.getElementById(name).scrollIntoView({behavior: 'smooth'});
+   
+  }
 }

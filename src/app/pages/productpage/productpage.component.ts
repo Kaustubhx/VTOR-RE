@@ -45,4 +45,9 @@ export class ProductpageComponent implements OnInit {
 
     window.scrollTo(0, 0);
   }
+
+  getLink(name:string)
+  {
+    return "https://wa.me/919284469487?text=I%20want%20to%20have%20a%20demo%20for%20"+name
+  }
 }

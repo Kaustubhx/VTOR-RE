@@ -1,4 +1,4 @@
-<Header></Header>
+<Header [page]="'product'"></Header>
 <div id="caseDetails-wrapper" [ngStyle]="{background: product.bannerColor}"
     class="pt-9 lg:pt-32 relative lg:flex lg:justify-evenly">
     <div id="container" class="px-5 md:px-9 lg:inline-block">
@@ -124,12 +124,15 @@
     <div id="container" class="px-5">
         <div id="downloadSection" class="text-center lg:max-w-3xl lg:mx-auto">
             <div id="downloadDesc" class="text-primary_text text-center mb-7">
-                <p class="text-2xl lg:text-4xl font-bold mb-7">Download the <span
+                <p class="text-2xl lg:text-4xl font-bold mb-7">Book Demo For <span
                         class="text-[#0083ff]">{{product.appName}}</span> Now!</p>
                 <p class="font-medium text-secondary_text">{{product.appShortDesc}}
                 </p>
             </div>
-            <GplayButton></GplayButton>
+            <a [href]="getLink(product.appName)"
+                    class="bg-green-600 w-full rounded-full py-3 px-7 mt-5 font-semibold text-white">
+                    Book A Demo
+                </a>
         </div>
     </div>
 </div>

@@ -12,6 +12,13 @@ export class ContactpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  positionMap = {
+    street: "thakur village",
+    num: "gayatri  satsung",
+    city: "mumbai"
+  };
+  mapsURL = `https://maps.google.com/maps?q=${this.positionMap.street}%20${this.positionMap.num}%20%${this.positionMap.city}&t=&z=20&ie=UTF8&iwloc=&output=embed`;
+
   display: any;
   center: google.maps.LatLngLiteral = {
     lat: 19.2108,
